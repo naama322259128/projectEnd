@@ -11,6 +11,8 @@ const AddUser = (props) => {
     //     let userToAdd = { identity, password, firstName, lastName, email, phone, adress };
 
     // }
+    // console.log("aaaaaaa");
+    
     return (
 
 
