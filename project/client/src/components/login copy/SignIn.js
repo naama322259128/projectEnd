@@ -1,34 +1,15 @@
 import { connect } from 'react';
 import React, { Component } from 'react'
 import { Input, Menu, Segment } from 'semantic-ui-react'
+import "./UserLogin.scss";
 const SignIn = (props) => {
     let fullName = "";
     let password = "";
     return (<>
 
-        <div className="ui placeholder segment" >
-            <img src='../../img/profile.png' />
-            <div class="ui divided selection list">
-                <a class="item">
-
-                    Kumquats
-  </a>
-                <a class="item">
-                    <div class="ui purple horizontal label">Candy</div>
-                    Ice Cream
-  </a>
-                <a class="item">
-                    <div class="ui red horizontal label">Fruit</div>
-                    Orange
-  </a>
-                <a class="item">
-                    <div class="ui horizontal label">Dog</div>
-                    Poodle
-  </a>
-            </div>
+<div className="ui placeholder segment" >
             <div className="ui two column very relaxed stackable grid">
                 <div className="column">
-
                     <div className="ui form">
                         <div className="field">
                             <label>Username</label>
@@ -47,15 +28,22 @@ const SignIn = (props) => {
                         <div className="ui blue submit button">Login</div>
                     </div>
                 </div>
-
+                <div className="middle aligned column">
+                    <div className="ui big button">
+                        <i className="signup icon"></i>
+                        Sign Up
+      </div>
+                </div>
             </div>
-
+            <div className="ui vertical divider">
+                Or
+  </div>
         </div>
     </>
     );
 }
 
-
+     
 
 
 export default SignIn;
